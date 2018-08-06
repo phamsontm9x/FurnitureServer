@@ -28,16 +28,29 @@ exports.register = function(req, res) {
   });
 };
 
+// exports.get = function(req, res) {
+//     User.find({ _id : req.user.user._id }, function(err, data) {
+//       if (err) 
+//         return res.status(400).send({
+//           success: false, 
+//           results: null,
+//           message: err
+//         });
+//       return res.send({success: true, results: data});
+//     });
+// };
+
 exports.get = function(req, res) {
-    User.find({ _id : req.user.user._id }, function(err, data) {
-      if (err) 
-        return res.status(400).send({
+    User.find({}, function(err, data) {
+    if (err) {
+      return res.status(400).send({
           success: false, 
           results: null,
           message: err
         });
-      return res.send({success: true, results: data});
-    });
+      }
+    return res.send({success: true, results: data});
+  });
 };
 
 exports.sign_in = function(req, res) {

@@ -1,0 +1,24 @@
+Heroku 
+email : thanhsoncun3@gmail.com Thanhson@1	
+
+MLab
+email: thanhsoncun3@gmail.com thanhsoncun ThanhSon@1
+admin1
+
+ok r?i á. 
+Vd mu?n ch?nh l?i table database c?a app thì ch?nh ? trong code hay ? ch? nào m
+
+s?a trong modals trongônde
+còn server hình cung y chang luôn hay ph?i làm cái khác n?a
+hình + user lay xai luon
+c? push lên là du?c h?.
+
+ua push len nhanh master la tu deloy
+
+vd ch?y du?i local thì mpn start h? m
+uk 
+test b?ng postman hay deloy lên r?i test b?ng postman
+te
+
+localhost:300
+ok cu?i tu?n nh?u haha

@@ -9,19 +9,24 @@ var jwt    = require('jsonwebtoken');
 var config = require('./config'); 
 var cors = require('cors')
 
-
+//  Models
 var User   = require('./models/userModel'); 
 var Category   = require('./models/categoryModel'); 
 var Food   = require('./models/foodModel'); 
 var Image   = require('./models/imageModel'); 
-var Comment   = require('./models/commentModel'); 
+var Comment   = require('./models/commentModel');
+var Product = require('./models/productModel');
+var Inspiration = require('./models/inspirationModel')
 
+// Route ->
 var index = require('./routes/index');
 var users = require('./routes/users');
 var category = require('./routes/category');
 var food = require('./routes/foods');
 var image = require('./routes/image');
 var comment = require('./routes/comment');
+var product = require('./routes/product');
+var inspiration = require('./routes/inspiration')
 
 var app = express();
 app.use(cors())
@@ -52,12 +57,16 @@ app.use(function(req, res, next) {
   }
 });
 
+
+// Route
 app.use('/', index);
 app.use('/users', users);
 app.use('/category', category);
 app.use('/food', food);
 app.use('/image', image);
 app.use('/comment', comment);
+app.use('/product' , product);
+app.use('/inspiration' , inspiration);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
