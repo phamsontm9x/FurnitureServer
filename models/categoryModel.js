@@ -10,6 +10,7 @@ var CategorySchema = new Schema({
   name: {
     type: String,
     unique: true,
+    require: true
   },
   image: {
     type : String
